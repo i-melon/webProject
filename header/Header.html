@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* этот css нужно добавить к основному стилю, или оставить как есть.(лучше к основному) */
+        header{
+            position: fixed;
+            left: 0%;
+            top: 0%;
+            width: 100%;
+            height: 55px;
+            margin: none;
+            border: none;
+            background-color: rgb(218, 195, 169);
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            /* font-family:  надо найти шрифт*/
+            /* позиции должны быть адаптивными, проверь пожалуйста на своем ноуте тоже */
+        }
+        .head{
+            margin-right: 35px;
+        }
+        .highlight{
+            font-weight: bold;
+            /* font-family:  надо найти шрифт*/
+            /* этот класс можно юзать и в других местах, если надо выделить текст */
+        }
+        #Discover{
+            background-color: black;
+            color: white;
+            height: 35px;
+            width: 90px;
+            border: none;
+            border-radius: 2px;
+            /* font-family:  надо найти шрифт*/ 
+            /* тут через айдишку, потому что вряд ли будем на что то друшое применять */
+        }
+
+
+        /* тут начинается стиль футера */
+        footer{
+            position: fixed;
+            bottom: 0%;
+            left: 0%;
+            width: 100%;
+            height: 50%;
+            background-color: rgb(226, 223, 223);
+            display: flex;
+            flex-direction: column;
+            justify-content:initial;
+            align-items: center;
+        }
+        .verticMain{
+            width: 65%;
+            height: 100%;
+            display: flex;
+            flex-direction: column; 
+            justify-content: space-between;
+        }
+        .horizMain{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+        .container{
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            width: 25%;
+            height: 250px;
+            justify-content: space-between;
+            align-items: center;
+            color: black;
+        }
+        .footerlink{
+            color: black;
+            text-decoration: none;
+        }
+        #Subscribe{
+            color: rgb(100, 99, 97);
+            width: 250px;
+            height: 45px;
+
+        }
+        .forPic{
+            width: 70%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .imglink{
+            width: 40px;
+        }
+        .forPic2{
+            width: 250px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-right: 30px;
+        }
+        .img2{
+            width: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="head">
+            <p>Welcome <span class = 'highlight'>ALADA floating folding desk</span> to our collection</p>
+        </div>
+        <div class="head">
+                <button id = "Discover">Discover</button>
+            </div>
+    </header>
+
+
+
+    <footer>
+        <div class="verticMain">
+            <div class="horizMain">
+                <div class="container">
+                    <h3>ABOUT</h3>
+                    <a href="" class = 'footerlink'>Design</a>
+                    <a href="" class = 'footerlink'>Wood</a>
+                    <a href="" class = 'footerlink'>Made</a>
+                    <a href="" class = 'footerlink'>Footprint</a>
+                    <a href="" class = 'footerlink'>Our Story</a>
+                    <a href="" class = 'footerlink'>We plant trees</a>
+                </div>
+                <div class="container">
+                    <h3>HELP</h3>
+                    <a href="" class = 'footerlink'>FAQ</a>
+                    <a href="" class = 'footerlink'>Warranty</a>
+                    <a href="" class = 'footerlink'>Shipments</a>
+                    <a href="" class = 'footerlink'>Returns</a>
+                    <a href="" class = 'footerlink'>Press</a>
+                    <a href="" class = 'footerlink'>Contact us</a>
+                </div>
+                <div class="container">
+                    <h3>MORE</h3>
+                    <a href="" class = 'footerlink'>Woodendot Family</a>
+                    <a href="" class = 'footerlink'>Bring a Friend, get 80€</a>
+                    <a href="" class = 'footerlink'>Video Lifestyle</a>
+                    <a href="" class = 'footerlink'>Affiliates</a>
+                </div>
+                <div class="container">
+                    <p>Don’t miss any news and exclusive offers!</p>
+                    <button id = 'Subscribe'>Newsletter subscription</button>
+                    <div class = "forPic">
+                        <p><img href ="" src="1.png" alt="" class = 'imglink'></p>
+                        <p><img href ="" src="2.png" alt="" class = 'imglink'></p>
+                        <p><img href ="" src="3.png" alt="" class = 'imglink'></p>
+                        <p><img href ="" src="4.png" alt="" class = 'imglink'></p>
+                    </div>
+                </div>
+            </div>
+            <div class="horizMain">
+                <p>© Copyright – WOODENDOT 2020</p>
+                <div class="forPic2">
+                    <p><img href ="" src="5.png" alt="" class = 'img2'></p>
+                    <p><img href ="" src="6.png" alt="" class = 'img2'></p>
+                    <p><img href ="" src="7.png" alt="" class = 'img2'></p>
+                    <p><img href ="" src="8.png" alt="" class = 'img2'></p>
+                </div>
+                <p>Terms & Conditions  |  Privacy Policy & Cookies</p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
